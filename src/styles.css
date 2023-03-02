@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+.body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #18122b;
+}
+
+.titleSection {
+  text-align: center;
+}
+
+.box {
+  width: 28vw;
+  height: 28vw;
+  background-color: #18122b;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box i {
+  font-size: 2.5em;
+}
+
+.game {
+  margin: 5%;
+  width: fit-content;
+  background-color: #393053;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.game::after {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: #18122b;
+  position: absolute;
+  left: 0;
+}
+.game::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: #18122b;
+  position: absolute;
+  right: 0;
+}
+
+.resetBtn {
+  padding: 2% 7%;
+  margin: 9%;
+  font-size: 1.2em;
+  border-radius: 30px;
+  border: none;
+  background: #393053;
+  box-shadow: 3px 3px 8px #00000087;
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .box {
+    width: 22vw;
+    height: 22vw;
+  }
+  .game {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 610px) {
+  .game {
+    width: 23%;
+  }
+  .box {
+    width: 7vw;
+    height: 7vw;
+  }
+}
